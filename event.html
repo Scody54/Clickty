@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clickty</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="event_app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Count things for you</h1>
+    </header>
+    <section id="events">
+      <h2>^_^</h2>
+      <button v-on:click = 'incr()'>climb up</button>
+      <button v-on:click= "dscr()">fall down</button>
+      <p>Stair No: {{ counter }}</p>
+    </section>
+  </body>
+</html>
